@@ -1,0 +1,59 @@
+.header {
+    nav {
+        padding: 20px
+    }
+    &__logo {
+        img {
+            width: 8.8rem;
+            height: 1.37rem;
+        };
+    }
+
+    &__menu{
+        > span {
+            display: block;
+            width: 26px;
+            height: 5px;
+            background-color: $darkblue;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+    }
+
+    &__links {
+
+        a {
+            font-size: $font-sma;
+            color: $darkblue;
+
+            &:not(last-child){
+                margin-right: 32px;
+            }
+
+            &:hover {
+                color: $darkpurple;
+            }
+        }
+
+    }
+
+    &__cta {
+        font-size: $font-sma;
+        font-weight: 100;
+        color: $white;        
+
+        &:hover {
+            background: $darkblue;
+        }
+    }
+
+    &__login {
+        font-size: $font-sma;
+
+        &:hover {
+            color: $darkpurple;
+        }
+    }
+}
