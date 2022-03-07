@@ -35,6 +35,8 @@ a, a:visited, a:hover {
 }
 
 .container {
+  max-width: 69.37rem;
+  margin: 0 auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -71,6 +73,7 @@ button, .button {
   border-radius: 5px;
   cursor: pointer;
   font-weight: 200;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 39.93em) {
@@ -118,12 +121,6 @@ button, .button {
   color: #7854F7;
 }
 
-.header__cta {
-  font-size: 0.875rem;
-  font-weight: 100;
-  color: #fff;
-}
-
 .header__cta:hover {
   background: #272D4E;
 }
@@ -134,6 +131,17 @@ button, .button {
 
 .header__login:hover {
   color: #7854F7;
+}
+
+@media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .hero__image {
@@ -149,6 +157,18 @@ button, .button {
         bottom: 81.76%; */
 }
 
+@media (min-width: 64em) {
+  .hero__image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 42rem;
+  }
+}
+
 .hero__image::before {
   content: "";
   position: absolute;
@@ -162,6 +182,18 @@ button, .button {
 
 .hero__text {
   text-align: center;
+}
+
+@media (min-width: 64em) {
+  .hero__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
 }
 
 .hero__text h1 {
