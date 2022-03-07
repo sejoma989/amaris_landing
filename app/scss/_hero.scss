@@ -49,6 +49,10 @@
             line-height: 1;
             color: $darkblue;
             margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large){
+                font-size: $font-xlg;
+            }
         }
 
         p {
@@ -56,6 +60,10 @@
             font-size: $font-sma;
             color: $grayletters;
             margin-bottom: 2.25rem;
+
+            @include breakpoint-up(large){
+                font-size: $font-lg;
+            }
         }
     }
 }
