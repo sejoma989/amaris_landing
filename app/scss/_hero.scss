@@ -1,12 +1,16 @@
 .hero {
 
     &__image {
-/*         position: relative;
+        position: relative;
         background-image:url('/images/Vector.svg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        min-height: 17.5 rem; */
+        min-height: 17.5rem;
+/*         left: 49.84%;
+        right: -41.88%;
+        top: -9.72%;
+        bottom: 81.76%; */
 
         &::before  {
             content:"";
@@ -14,13 +18,28 @@
             width: 100%;
             height: 100%;
             background-image: url('/images/featured-image.SVG');
-            background-size: cover;
+            background-size: 100%;
             background-repeat: no-repeat;
             background-position: center bottom;
         }
     }
 
     &__text {
-        position:relative;
+        text-align: center;
+
+        h1 {
+            font-weight: 300;
+            font-size: 2.21rem;
+            line-height: 1;
+            color: $darkblue;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: $font-sma;
+            color: $grayletters;
+            margin-bottom: 2.25rem;
+        }
     }
 }

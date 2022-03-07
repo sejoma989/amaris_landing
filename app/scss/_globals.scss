@@ -23,8 +23,18 @@ body {
     background: linear-gradient(rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
 }
 
+h1, h2, h3 {
+    margin-top: 0;
+}
+
 a, a:visited, a:hover {
     text-decoration: none;
+}
+
+//spacing
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 //Flexbox
@@ -45,6 +55,7 @@ a, a:visited, a:hover {
 
 //Buttons
 button, .button {
+    display: inline-block;
     padding: 0.4rem 1rem;
     background: $darkpurple;
     color: $white;
